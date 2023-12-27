@@ -3,7 +3,7 @@ import Home from "../app/components/moleculs/Home"
 import Service from "../app/components/moleculs/Service"
 import About from "../app/components/moleculs/About"
 import Footer from "../app/components/atoms/Footer"
-import NavbarComponent from "../app/components/atoms/Navbar"
+import NavbarComponent from "./components/atoms/NavbarComponent"
 import { animateScroll } from "react-scroll";
 
 
