@@ -35,7 +35,7 @@ export default function CardService() {
                         isExternal
                         showAnchorIcon
                         target="_blank"
-                        href="https://api.whatsapp.com/send/?phone=628818353439&text&type=phone_number&app_absent=0"
+                        href="https://api.whatsapp.com/send?phone=628818353439&text=Halo%20ini%20pesan%20saya"
                     // className="text-black font-bold"
                     >
                         Hubungi Kami
@@ -67,7 +67,7 @@ export default function CardService() {
                         isExternal
                         showAnchorIcon
                         target="_blank"
-                        href="https://api.whatsapp.com/send/?phone=628818353439&text&type=phone_number&app_absent=0"
+                        href="https://api.whatsapp.com/send?phone=628818353439&text=Halo%20ini%20pesan%20saya"
                     >
                         Hubungi Kami
                     </Link>
@@ -98,7 +98,7 @@ export default function CardService() {
                         isExternal
                         showAnchorIcon
                         target="_blank"
-                        href="https://api.whatsapp.com/send/?phone=628818353439&text&type=phone_number&app_absent=0"
+                        href="https://api.whatsapp.com/send?phone=628818353439&text=Halo%20ini%20pesan%20saya"
                     >
                         Hubungi Kami
                     </Link>
@@ -129,7 +129,7 @@ export default function CardService() {
                         isExternal
                         showAnchorIcon
                         target="_blank"
-                        href="https://api.whatsapp.com/send/?phone=628818353439&text&type=phone_number&app_absent=0"
+                        href="https://api.whatsapp.com/send?phone=628818353439&text=Halo%20ini%20pesan%20saya"
                     >
                         Hubungi Kami
                     </Link>
@@ -160,7 +160,7 @@ export default function CardService() {
                         isExternal
                         showAnchorIcon
                         target="_blank"
-                        href="https://api.whatsapp.com/send/?phone=628818353439&text&type=phone_number&app_absent=0"
+                        href="https://api.whatsapp.com/send?phone=628818353439&text=Halo%20ini%20pesan%20saya"
                     >
                         Hubungi Kami
                     </Link>
@@ -190,7 +190,7 @@ export default function CardService() {
                         isExternal
                         showAnchorIcon
                         target="_blank"
-                        href="https://api.whatsapp.com/send/?phone=628818353439&text&type=phone_number&app_absent=0"
+                        href="https://api.whatsapp.com/send?phone=628818353439&text=Halo%20ini%20pesan%20saya"
                     >
                         Hubungi Kami
                     </Link>
@@ -221,7 +221,7 @@ export default function CardService() {
                         isExternal
                         showAnchorIcon
                         target="_blank"
-                        href="https://api.whatsapp.com/send/?phone=628818353439&text&type=phone_number&app_absent=0"
+                        href="https://api.whatsapp.com/send?phone=628818353439&text=Halo%20ini%20pesan%20saya"
                     >
                         Hubungi Kami
                     </Link>
@@ -252,7 +252,7 @@ export default function CardService() {
                         isExternal
                         showAnchorIcon
                         target="_blank"
-                        href="https://api.whatsapp.com/send/?phone=628818353439&text&type=phone_number&app_absent=0"
+                        href="https://api.whatsapp.com/send?phone=628818353439&text=Halo%20ini%20pesan%20saya"
                     >
                         Hubungi Kami
                     </Link>
@@ -283,7 +283,7 @@ export default function CardService() {
                         isExternal
                         showAnchorIcon
                         target="_blank"
-                        href="https://api.whatsapp.com/send/?phone=628818353439&text&type=phone_number&app_absent=0"
+                        href="https://api.whatsapp.com/send?phone=628818353439&text=Halo%20ini%20pesan%20saya"
                     >
                         Hubungi Kami
                     </Link>

@@ -25,7 +25,7 @@ export default function Footer() {
                 <div className='xl:w-[50%] lg:w-[50%]'>
                     <h1 className='font-bold text-white my-2'>Hubungi Kami</h1>
                     <p className='text-white mb-3 '>Tanyakan kepada kami, Team Kami siap memberikan solusi terbaik untuk Anda atau Perusahaan Anda</p>
-                    <Link href="https://api.whatsapp.com/send/?phone=628818353439&text&type=phone_number&app_absent=0" target="_blank"
+                    <Link href="https://api.whatsapp.com/send?phone=628818353439&text=Halo%20ini%20pesan%20saya" target="_blank"
                     >
                         <Button color="default" className='bg-red-600 text-white py-5 px-5'>
                             <FeatherIcon icon="phone" className="text-white" />

@@ -102,7 +102,7 @@ export default function Home() {
                         <p className="text-white mb-5">
                             Harga yang relatif terjangkau dari berbagai kalangan. Pelayanan dengan sepenuh hati menjadi visi kami, dan kepuasan Anda menjadi misi kami.
                         </p>
-                        <Link href="https://api.whatsapp.com/send/?phone=628818353439&text&type=phone_number&app_absent=0" target="_blank">
+                        <Link href="https://api.whatsapp.com/send?phone=628818353439&text=Halo%20ini%20pesan%20saya" target="_blank">
                             <Button color="default" className="bg-red-600 text-white py-5 px-5" >
                                 Pesan Sekarang
                             </Button>
