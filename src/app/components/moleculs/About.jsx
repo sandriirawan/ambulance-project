@@ -1,6 +1,8 @@
 import { Button, Link } from '@nextui-org/react'
 import React from 'react'
 import { motion } from "framer-motion"
+import logo from "../../../../public/Logo2.png"
+import Image from 'next/image'
 
 
 
@@ -12,7 +14,7 @@ export default function About() {
                     <motion.div
                         initial={{ x: -200 }}
                         animate={{ x: 0 }}                    >
-                        <img className="image-section " src="/Logo2.png" alt="" />
+                        <Image className="image-section" src={logo} alt="logo" />
                     </motion.div>
                 </div>
 

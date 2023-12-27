@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem,  Link } from "@nextui-org/react";
+import { Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, Link } from "@nextui-org/react";
 import FeatherIcon from "feather-icons-react/build/FeatherIcon";
 import { Link as ScrollLink } from "react-scroll";
 
@@ -29,7 +29,7 @@ export default function NavbarComponent() {
                 <NavbarItem>
                     <ScrollLink
                         className="text-white cursor-pointer"
-                        to="1"
+                        to="home"
                         spy={true}
                         smooth={true}
                         duration={500}
@@ -40,7 +40,7 @@ export default function NavbarComponent() {
                 <NavbarItem>
                     <ScrollLink
                         className="text-white cursor-pointer"
-                        to="2"
+                        to="service"
                         spy={true}
                         smooth={true}
                         duration={500}
@@ -51,7 +51,7 @@ export default function NavbarComponent() {
                 <NavbarItem>
                     <ScrollLink
                         className="text-white cursor-pointer"
-                        to="3"
+                        to="about"
                         spy={true}
                         smooth={true}
                         duration={500}
@@ -62,7 +62,7 @@ export default function NavbarComponent() {
                 <NavbarItem>
                     <ScrollLink
                         className="text-white cursor-pointer"
-                        to="4"
+                        to="footer"
                         spy={true}
                         smooth={true}
                         duration={500}

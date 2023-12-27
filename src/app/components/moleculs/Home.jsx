@@ -3,6 +3,8 @@ import { Carousel, IconButton } from "@material-tailwind/react";
 import React from 'react'
 import FeatherIcon from 'feather-icons-react/build/FeatherIcon';
 import { motion } from "framer-motion"
+import Image from 'next/image';
+import ambulance from "../../../../public/Ambulance3.png"
 
 
 export default function Home() {
@@ -80,7 +82,7 @@ export default function Home() {
                         transition={{ duration: 2 }}
 
                     >
-                        <img className="image-section" src="/Ambulance3.png" alt="" />
+                        <Image className="image-section" src={ambulance} alt="ambulance" />
                     </motion.div>
                 </div>
             </div>
@@ -114,7 +116,7 @@ export default function Home() {
                         transition={{ duration: 2 }}
 
                     >
-                        <img className="image-section" src="/Ambulance3.png" alt="" />
+                        <Image className="image-section" src={ambulance} alt="ambulance" />
                     </motion.div>
                 </div>
             </div>
