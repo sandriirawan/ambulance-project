@@ -1,9 +1,16 @@
 import React from "react";
 import { Card, CardHeader, CardBody, CardFooter, Divider, Link, Image } from "@nextui-org/react";
+import { motion } from "framer-motion"
+
 
 export default function CardService() {
     return (
-        <div className="flex flex-wrap gap-5 items-center justify-center">
+
+        <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1 }}
+            className="flex flex-wrap gap-5 items-center justify-center">
             <Card className="xl:w-[30%] lg:[40%] md:w[50%] w-[95%] ] xl:h-[35%]">
                 <CardHeader className="flex gap-3">
                     <Image
@@ -282,6 +289,6 @@ export default function CardService() {
                     </Link>
                 </CardFooter>
             </Card>
-        </div>
+        </motion.div>
     );
 }

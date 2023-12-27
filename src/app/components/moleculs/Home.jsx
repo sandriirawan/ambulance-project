@@ -1,8 +1,9 @@
 import { Button, Link } from '@nextui-org/react'
 import { Carousel, IconButton } from "@material-tailwind/react";
-import { Fade } from 'react-reveal';
 import React from 'react'
 import FeatherIcon from 'feather-icons-react/build/FeatherIcon';
+import { motion } from "framer-motion"
+
 
 export default function Home() {
     return (
@@ -53,7 +54,46 @@ export default function Home() {
             {/* Slide 1 */}
             < div className="flex flex-col md:flex-row lg:flex-row xl:flex-row w-screen h-screen xl:px-[10%] lg:px-[10%] items-center justify-center">
                 <div className="xl:w-[50%] lg:w-[50%] md:w-[50%] xl:order-1 md:order-1 lg:order-1 px-3 py-10 order-2 text-center md:text-left lg:text-left xl:text-left">
-                    <Fade duration={3000}>
+                    <motion.div
+                        initial={{ opacity: 0, scale: 0.5 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 2 }}
+                    >
+                        <h1 className="text-white font-bold mb-2 text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
+                            AMBULANCE BANDUNG SERVICE
+                        </h1>
+                        <p className="text-white mb-5">
+                            Harga yang relatif terjangkau dari berbagai kalangan. Pelayanan dengan sepenuh hati menjadi visi kami, dan kepuasan Anda menjadi misi kami.
+                        </p>
+                        <Link href="https://api.whatsapp.com/send/?phone=628818353439&text&type=phone_number&app_absent=0" target="_blank">
+
+                            <Button color="default" className="bg-red-600 text-white py-5 px-5" >
+                                Pesan Sekarang
+                            </Button>
+                        </Link>
+                    </motion.div>
+                </div>
+                <div className="xl:w-[50%] lg:w-[50%] md:w-[50%] w-[50%] xl:order-2 md:order-2 lg:order-2 p-3 order-1">
+                    <motion.div
+                        initial={{ opacity: 0, scale: 0.5 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 2 }}
+
+                    >
+                        <img className="image-section" src="/Ambulance3.png" alt="" />
+                    </motion.div>
+                </div>
+            </div>
+
+            {/* Slide 2 */}
+            < div className="flex flex-col md:flex-row lg:flex-row xl:flex-row w-screen h-screen xl:px-[10%] lg:px-[10%] items-center justify-center">
+                <div className="xl:w-[50%] lg:w-[50%] md:w-[50%] xl:order-1 md:order-1 lg:order-1 px-3 py-10 order-2 text-center md:text-left lg:text-left xl:text-left">
+                    <motion.div
+                        initial={{ opacity: 0, scale: 0.5 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 2 }}
+
+                    >
                         <h1 className="text-white font-bold mb-2 text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
                             AMBULANCE BANDUNG SERVICE
                         </h1>
@@ -65,36 +105,17 @@ export default function Home() {
                                 Pesan Sekarang
                             </Button>
                         </Link>
-                    </Fade>
+                    </motion.div>
                 </div>
                 <div className="xl:w-[50%] lg:w-[50%] md:w-[50%] w-[50%] xl:order-2 md:order-2 lg:order-2 p-3 order-1">
-                    <Fade duration={3000}>
-                        <img className="image-section" src="/Ambulance3.png" alt="" />
-                    </Fade>
-                </div>
-            </div>
+                    <motion.div
+                        initial={{ opacity: 0, scale: 0.5 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 2 }}
 
-            {/* Slide 2 */}
-            <div className="flex flex-col md:flex-row lg:flex-row xl:flex-row w-screen h-screen xl:px-[10%] lg:px-[10%] items-center justify-center">
-                <div className="xl:w-[50%] lg:w-[50%] md:w-[50%] xl:order-1 md:order-1 lg:order-1 px-3 py-10 order-2 text-center md:text-left lg:text-left xl:text-left">
-                    <Fade duration={2000}>
-                        <h1 className="text-white font-bold mb-2 text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
-                            AMBULANCE BANDUNG SERVICE
-                        </h1>
-                        <p className="text-white mb-5">
-                            Harga yang relatif terjangkau dari berbagai kalangan. Pelayanan dengan sepenuh hati menjadi visi kami, dan kepuasan Anda menjadi misi kami.
-                        </p>
-                        <Link href="https://api.whatsapp.com/send/?phone=628818353439&text&type=phone_number&app_absent=0" target="_blank">
-                            <Button color="default" className="bg-red-600 text-white py-5 px-5">
-                                Pesan Sekarang
-                            </Button>
-                        </Link>
-                    </Fade>
-                </div>
-                <div className="xl:w-[50%] lg:w-[50%] md:w-[50%] w-[50%] xl:order-2 md:order-2 lg:order-2 p-3 order-1">
-                    <Fade duration={2000}>
+                    >
                         <img className="image-section" src="/Ambulance3.png" alt="" />
-                    </Fade>
+                    </motion.div>
                 </div>
             </div>
         </Carousel >
