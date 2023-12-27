@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Button, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, Image, Link } from "@nextui-org/react";
+import { Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem,  Link } from "@nextui-org/react";
 import FeatherIcon from "feather-icons-react/build/FeatherIcon";
 import { Link as ScrollLink } from "react-scroll";
 
@@ -76,6 +76,7 @@ export default function NavbarComponent() {
                         color="foreground"
                         target="_blank"
                         href="https://api.whatsapp.com/send/?phone=628818353439&text=Halo,%20saya%20ingin%20bertanya%20..."
+                        to="#"
                     >
                         <FeatherIcon icon="smartphone" className="text-white" />
                         08818353439
