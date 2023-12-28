@@ -10,8 +10,8 @@ import ambulance from "../../../../public/Ambulance3.png"
 export default function Home() {
     return (
         <Carousel
-            transition={{ duration: 2 }}
-            autoplay={true}
+            transition={{ duration: 1 }}
+            autoplay={true} 
             className="rounded-xl"
             navigation={({ setActiveIndex, activeIndex, length }) => (
                 <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-2">
@@ -93,7 +93,7 @@ export default function Home() {
                     <motion.div
                         initial={{ opacity: 0, scale: 0.5 }}
                         animate={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 2 }}
+                        transition={{ duration: 1 }}
 
                     >
                         <h1 className="text-white font-bold mb-2 text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
@@ -113,7 +113,7 @@ export default function Home() {
                     <motion.div
                         initial={{ opacity: 0, scale: 0.5 }}
                         animate={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 2 }}
+                        transition={{ duration: 1 }}
 
                     >
                         <Image className="image-section" src={ambulance} alt="ambulance" />

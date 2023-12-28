@@ -6,12 +6,6 @@ import { Link as ScrollLink } from "react-scroll";
 export default function NavbarComponent() {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
-    const menuItems = [
-        "HOME",
-        "LAYANAN",
-        "TENTANG",
-        "KONTAK"
-    ];
 
     return (
         <Navbar onMenuOpenChange={setIsMenuOpen} className="bg-black">
@@ -21,7 +15,7 @@ export default function NavbarComponent() {
                     className="sm:hidden text-white"
                 />
                 <NavbarBrand>
-                    <p className="font-bold text-inherit text-white ml-2">ACAMBULANCE BANDUNG SERVICE</p>
+                    <p className="font-bold text-inherit text-white ml-2">AMBULANCE BANDUNG SERVICE</p>
                 </NavbarBrand>
             </NavbarContent>
 
@@ -83,19 +77,61 @@ export default function NavbarComponent() {
                     </Link>
                 </NavbarItem>
             </NavbarContent>
-            <NavbarMenu>
-                {menuItems.map((item, index) => (
-                    <NavbarMenuItem key={`${item}-${index}`}>
+            <div>
+                <NavbarMenu>
+                    <div className="flex justify-between items-center">
+                        <NavbarMenuItem >
+                            <ScrollLink
+                                className="text-white cursor-pointer"
+                                to="home"
+                                spy={true}
+                                smooth={true}
+                                duration={500}
+                                aria-label="Close menu"
+
+                            >
+                                HOME
+                            </ScrollLink>
+                        </NavbarMenuItem>
+                        <NavbarMenuToggle
+                            className="sm:hidden text-white p-0 h-10"
+                        />
+                    </div>
+                    <NavbarMenuItem>
                         <ScrollLink
-                            className="w-full text-white"
-                            href="#"
-                            size="lg"
+                            className="text-white cursor-pointer"
+                            to="service"
+                            spy={true}
+                            smooth={true}
+                            duration={500}
                         >
-                            {item}
+                            LAYANAN
                         </ScrollLink>
                     </NavbarMenuItem>
-                ))}
-            </NavbarMenu>
+                    <NavbarMenuItem>
+                        <ScrollLink
+                            className="text-white cursor-pointer"
+                            to="about"
+                            spy={true}
+                            smooth={true}
+                            duration={500}
+                        >
+                            TENTANG
+                        </ScrollLink>
+                    </NavbarMenuItem>
+                    <NavbarMenuItem>
+                        <ScrollLink
+                            className="text-white cursor-pointer"
+                            to="footer"
+                            spy={true}
+                            smooth={true}
+                            duration={500}
+                        >
+                            KONTAK
+                        </ScrollLink>
+                    </NavbarMenuItem>
+                </NavbarMenu>
+            </div>
         </Navbar >
     );
 }
